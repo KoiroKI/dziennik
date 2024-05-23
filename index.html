@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Dziennik Elektroniczny</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dziennik Elektroniczny</h1>
+        <section id="plan-lekcji">
+            <h2>Plan Lekcji</h2>
+            <form id="plan-form" action="add_lekcja.php" method="post">
+                <input type="text" name="dzien" placeholder="Dzień" required>
+                <input type="text" name="godzina" placeholder="Godzina" required>
+                <input type="text" name="przedmiot" placeholder="Przedmiot" required>
+                <input type="text" name="nauczyciel" placeholder="Nauczyciel" required>
+                <button type="submit">Dodaj lekcję</button>
+            </form>
+        </section>
+        
+        <section id="oceny">
+            <h2>Oceny</h2>
+            <form id="oceny-form" action="add_ocena.php" method="post">
+                <input type="text" name="uczen" placeholder="Uczeń" required>
+                <input type="text" name="przedmiot" placeholder="Przedmiot" required>
+                <input type="number" name="ocena" placeholder="Ocena" required>
+                <button type="submit">Dodaj ocenę</button>
+            </form>
+        </section>                              
+    </div>
+</body>
+</html>
